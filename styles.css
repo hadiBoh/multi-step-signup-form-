@@ -1,0 +1,288 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    background: #eee;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  /* direction: rtl;*/
+}
+:before,:after{
+    box-sizing: border-box;
+}
+body{
+	overflow-y:scroll;
+}
+.wrapper{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background: -webkit-linear-gradient(bottom , #0250c5 , #d43f8d);
+}
+.container{
+	max-width: 340px;
+	width: 100%;
+	height: 500px;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.25) 0 5px 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+}
+.header{
+	font-size: 25px;
+	margin: 30px;
+	font-weight: 900;
+}
+.navbar-section{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.navbar-section div{
+	display: flex;
+	flex: 0 0 25%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.navbar-section div p{
+	margin-bottom: 10px;
+}
+.navbar-section div span{
+	min-width: 30px;
+	min-height: 30px;
+	width: 30px;
+	height: 30px;
+	border: 3.5px solid #222;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index:10;
+	position: relative;
+	background: #fff;
+	transition: all 0.5s ease;
+} 
+/*change navbar btn color*/
+.navbar-section div.completed span{
+	background: #d43f8d;
+	color: #fff;
+	border-color: #d43f8d;
+}
+.navbar-section div.completed div{/*lines*/
+	background: #d43f8d;
+	border-color: #d43f8d;
+	border-top:6px solid #fff;
+	border-bottom:6px solid #fff;
+}
+.navbar-section div.completed p{
+	color: #d43f8d;
+}
+.circle{
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	border-radius: 20px;
+	top:29.5px;
+	z-index: 9;
+}
+.line1{
+	position: absolute;
+	width: 40px;
+	height: 1px;
+	background: #222;
+	z-index: 2;
+	top: -22px;
+	left: 38px;
+	border-top:6px solid #fff;
+	border-bottom:6px solid #fff;
+}
+.line2{
+	position: absolute;
+	width: 40px;
+	height: 1px;
+	background: #222;
+	z-index: 2;
+	top: -22px;
+	left: 38px;
+	border-top:6px solid #fff;
+	border-bottom:6px solid #fff;
+}
+.line3{
+	position: absolute;
+	width: 40px;
+	height: 1px;
+	background: #222;
+	z-index: 2;
+	top: -22px;
+	left: 38px;
+	border-top:6px solid #fff;
+	border-bottom:6px solid #fff;
+}
+.line4{
+	position: absolute;
+	width: 30px;
+	height: 1px;
+	background: #222;
+	z-index: 2;
+	top: -22px;
+	left: 40px;
+	visibility: hidden;
+}
+.forms-wrapper{ /*putting forms in another wrapper solved the  overflew showing all forms problem when shrinking*/
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+}
+.forms{
+	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	height: 100%;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+.forms ul{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+.forms ul li{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin:5px 15px;
+}
+.forms ul li input{
+	height: 30px;
+	outline: none;
+	border: 2px solid #999;
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 45px;
+}
+.birth select{
+	height: 30px;
+	outline: none;
+	border: 2px solid #999;
+	border-radius: 5px;
+	padding-left: 10px;
+	height: 45px;
+	cursor: pointer;	
+}
+.section-header{
+	font-size: 20px;
+	font-weight: 500;
+	width: 100%;
+}
+.first-next-btn{
+	width: 100%;
+	height: 45px;
+	font-size: 20px;
+	color: #fff;
+	background: #d43f8d;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	margin:20px;
+	cursor: pointer;
+}
+
+.btns{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+}
+.btns input{
+	width: 48%;
+	height: 45px;	
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.btns .prev{
+	background: #0250c5;
+}
+.btns .next{
+	background: #d43f8d;
+}
+.btns .submit-btn{
+	width: 48%;
+	height: 45px;	
+	font-size: 17px;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background: green;
+}
+.message{
+	transition: all 0.5s ease;
+	opacity: 0;
+	scale: 0.4;
+}
+.message.show{
+	transition: all 0.5s ease;
+	opacity: 1;
+	scale: 1;
+	max-width: 420px;
+	padding: 5px;
+	height: 40px;
+	background: #d1e7dd;
+	color: #0f5132;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: rgb(0, 0 ,0 ,0.2) 0 5px 10px;
+}
+.fa-3x{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #222;
+}
+.fa-spinner{
+	color: #222;
+	font-size: 17px;
+	margin-left: 10px;
+}

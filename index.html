@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta lang="fa">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles.css">    
+    <script type="text/javascript" src="script.js" defer></script>
+ <title>multi step signup</title>
+</head>
+<body>
+
+<div class="wrapper">
+   <div class="message">success ! you are redirecting to your dashboard 
+      <div class="fa-3x">
+         <i class="fa fa-spinner fa-spin"></i>
+       </div>
+   </div>
+   <div class="container">
+      <header class="header">Signup Form</header>
+      <div class="navbar-section">
+         <div class="nav-name nav"><p>name</p><span data-id = "1" class="span-name">1</span><div class="line1"></div></div>
+         <div class="nav-contact nav"><p>contact</p><span data-id = "2" class="span-contact">2</span></section><div class="line2"></div></div>
+         <div class="nav-birth nav"><p>birth</p><span data-id = "3" class="span-birth">3</span><div class="line3"></div></div>
+         <div class="nav-submit nav"><p>submit</p><span data-id = "4" class="span-submit">4</span><div class="line4"></div></div>
+         
+      </div>
+      <div class="forms-wrapper">
+         <div class="forms">
+            <ul class="name">
+               <header class="section-header">Basic info:</header>
+               <li class="fname-input"><span>first name</span><input type="text"placeholder="first name"></li>
+               <li class="lname-input"><span>last name</span><input type="text" placeholder="last name"></li>
+               <input type="button" id="btn-n-p" class="first-next-btn next" value="NEXT">
+            </ul>
+            <ul class="contact">
+               <header class="section-header">Contact info:</header>
+               <li class="email-input"><span>email</span><input type="text"placeholder="email"></li>
+               <li class="phone-input"><span>phone unmber</span><input type="text" placeholder="phone number"></li>
+               <div class="btns">
+                  <input type="button" id="btn-n-p" class="second-prev-btn prev" value="PREVIOUS">
+                  <input type="button" id="btn-n-p" class="second-next-btn next" value="NEXT">
+               </div>
+            </ul>
+            <ul class="birth">
+               <header class="section-header">Birth info:</header>
+               <li class="date-input"><span>Date</span><input type="text"placeholder="birth date"></li>
+               <li class="gender-input"><span>Gender</span>
+                  <select name="Gender">
+                     <option value="first">male</option>
+                     <option value="second" selected>female</option>
+                     <option value="third">other</option>
+                   </select>
+               </li>
+               <div class="btns">
+                  <input type="button" id="btn-n-p" class="third-prev-btn prev" value="PREVIOUS">
+                  <input type="button" id="btn-n-p" class="third-next-btn next" value="NEXT">
+               </div>
+            </ul>
+            <ul class="submit">
+               <header class="section-header">Login info:</header>
+               <li class="username-input"><span>username</span><input type="text"placeholder="username"></li>
+               <li class="password-input"><span>password</span><input type="password" placeholder="password"></li>
+               <div class="btns">
+                  <input type="button" id="btn-n-p" class="last-prev-btn prev" value="PREVIOUS">
+                  <input type="button" id="submit-btn" class="submit-btn next" value="SUBMIT">
+               </div>
+            </ul>
+         </div>
+      </div>
+      
+   </div>
+</div>
+
+
+</body>
+</html>
